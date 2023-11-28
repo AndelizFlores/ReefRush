@@ -5,7 +5,7 @@ class Game {
         this.gameScreen = document.getElementById('game-screen')
         this.gameEndScreen = document.getElementById('game-end')
         this.gameContainer = document.getElementById('game-container')
-        this.player = new Player(this.gameScreen, 212, 450, 150, 100, 'images/fish2.png')
+        this.player = new Player(this.gameScreen, 212, 450, 150, 100, './Images/fish2.png')
         this.height = 1080
         this.width = 1920
         this.obstacles = []
@@ -54,16 +54,16 @@ class Game {
             let obstacleType
              switch(true){                                                 //NEW
                 case this.score < 1100:   //100
-                obstacleType = './images/shark.png'
+                obstacleType = './Images/shark.png'
                 break
                 case this.score > 1100 && this.score <= 2500:   //100 y 1000
-                obstacleType = "./images/25-1.png" 
+                obstacleType = "./Images/25-1.png" 
                 break
                 case this.score > 2500:  //1000
-                obstacleType = "./images/killerWhale-1.png"
+                obstacleType = "./Images/killerWhale-1.png"
                 break
                 default:
-                obstacleType = './images/shark.png'
+                obstacleType = './Images/shark.png'
             }
             console.log("Obstacle", obstacleType)
             this.obstacles.push(new Obstacle(this.gameScreen, obstacleType))
