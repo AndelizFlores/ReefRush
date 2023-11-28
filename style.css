@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#game-container{
+  display: none;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: center;
+  
+}
+
+#game-screen{
+  display: none;
+  align-content: center;
+  /* padding: 20px 0px; */
+  overflow: hidden;
+  position: relative;
+  height: 1080px;
+  width: 1920px;
+  /* background: url("./Images/long-background1.png") repeat-x; */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size:cover; */
+  /* animation: move 10s linear infinite; */
+}
+
+#background {
+  background: url("./Images/long-background1-minus-pixel.png") repeat-x;
+  position: absolute;
+  animation: move 10s linear infinite;
+  height: 1080px;
+  width: 29997px;
+  z-index: 1;
+}
+
+@keyframes move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-9999px, 0, 0);
+  }
+}
+
+/* @keyframes slide {
+  0% {
+    background-position: 0 -1000px;
+  }
+  95% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 50px;
+  }
+} */
+
+#fish{
+  height: 100px;
+  width: 150px;
+  position: fixed;
+  top:40vh;
+  left: 30vw;
+  z-index: 100;
+}
+body {
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Verdana";
+  }
+  
+  #game-intro {
+    padding: 20px 0px;
+    background: url("./Images/intro screen.png") no-repeat center center;
+    background-size:auto auto;
+    align-content: center;
+  }
+
+  #game-end {
+    display: none;
+    padding: 20px 0px;
+    background: url("./Images/GameOver-Screen.png") no-repeat center center;
+    background-size:auto auto;
+    align-content: center;
+  }
+
+  body button {
+    font-size: 30px;
+    background-color: #870007;  
+    color: #fff;
+    padding: 50px 100px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 30px;
+    margin-bottom: 150px;
+  }
+
+  /* body button {
+    font-size: 30px;
+    background-color: #870007;  maybe I can use just this color
+    color: #fff;
+    padding: 20px 40px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  } */
+
+  .arrows-img {
+    width: 150px;
+  }
+
+  #Intro{
+    background-size:cover;
+    align-content: center;
+  }
+
+  #start-button{
+    background-image: url(Images/boton.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 450px;
+    padding: 35px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    display: inline-flex;
+    outline: none;
+    color: transparent;
+    transition: 1s;
+    }
+
+    #start-button:hover{
+      transform: scale(1.1);
+      
+    }
+
+    .arrows-img{
+      padding: 20px 25px;
+    }
+
+    #restart-button{
+    background-image: url(Images/restart-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 450px;
+    padding: 35px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    display: inline-flex;
+    outline: none;
+    color: transparent;
+    transition: 1s;
+    }
+
+    #restart-button:hover{
+      transform: scale(1.1);
+    }
+
+    h1{
+      font-size: 20px;
+    }
+
+    #game-container{
+      /* display: center; */
+      flex-direction: center;
+      align-items: center;
+      background-color: black;
+      background-size: center;
+      color: white;
+      position: absolute;
+     }
+/*#stats*/
+   
+#sfx {  
+    background-image: url(Images/soundON.png);
+    right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    padding: 35px;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    outline: none;
+    color: transparent;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* #sfx:focus{
+  background-image: url(Images/soundOFF.png);
+} */
+
+#sfx:hover{
+  transform: scale(1.2);
+}
+
+#fs {
+  background-image: url(Images/fullScreen.png);
+  left: 10px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 75px;
+  padding: 35px;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  display: inline-flex;
+  outline: none;
+  color: transparent;
+}
+
+#fs:hover{
+  transform: scale(1.2);
+}
+
+:fullscreen{
+  background-color: black;
+}
+:-webkit-full-screen{
+  background-color: black;
+ }
+:-moz-full-screen{
+  background-color: black;
+}
+:-ms-fullscreen{
+  background-color: black;
+}
+
+/* #leaderboard{
+  display: none;
+} */
+
+
+#stats {
+  margin-top: 20px;
+  margin-left: 0; 
+}
+#stats h2 {
+  margin-bottom: 5px;  
+}
+#score {
+  display: block;  
+  margin-top: 5px;   
+}

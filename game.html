@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReefRush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="audio" preload="auto" src="./music-and-sfx/music1.mp3"></audio>
+    <div id="game-intro">
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <!-- <img src="./Images/Logo.png" alt="" class="logo-img" /> MAIN LOGO -->
+       <br />
+        <button id="start-button">....................
+          ....................
+        </button>
+        <p>Use the up and down arrow to control the cute fish!</p>
+        <img src="./Images/arrow up and down1.png" alt="" class="arrows-img" />
+         </div>
+      <div id="game-container">
+        <div id ="stats">
+          <h2>Stats</h2>
+          <p>Score: <span id="score">0</span></p>
+        </div>
+          <!-- #game-screen is initially hidden using CSS style display: none -->
+        <div id = "game-screen">
+          <div id="background"></div> 
+        </div>
+        
+        <!-- <img src="./Images/Fish2.png" alt="the fish" id="fish"> -->
+        <!-- #game-end is initially hidden using CSS style display: none -->
+      </div>
+      <div id="game-end">
+        <canvas id="gameCanvas2" width="800" height="600"></canvas>
+        <!-- <img src="./Images/gameover.png" alt="" class="logo-img" /> <!-- when you died-->
+        <h1 id="game-result"></h1>
+        <h2 id="high-score"></h2>
+        <h1>Try again!</h1>
+        <br />
+        <button id="restart-button">...................
+          ....................
+        </button>
+      </div>
+      <div id = "fullAndMusic">
+        <button id="fs" data-toggle-fullscreen>fs</button>
+         <button id="sfx">♫</button>
+         <!-- <audio src="" id="collision"></audio> -->
+    </div>    
+      <script type="text/javascript" src="script.js"></script>
+      <script type="text/javascript" src="Game.js"></script>
+      <script type="text/javascript" src="Obstacle.js"></script>
+      <script type="text/javascript" src="player.js"></script>
+</body>
+</html>
