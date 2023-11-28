@@ -121,7 +121,7 @@ body {
   }
 
   #start-button{
-    background-image: url(Images/boton.png);
+    background-image: url(./Images/boton.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 450px;
@@ -146,7 +146,7 @@ body {
     }
 
     #restart-button{
-    background-image: url(Images/restart-button.png);
+    background-image: url(./Images/restart-button.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 450px;
@@ -181,7 +181,7 @@ body {
 /*#stats*/
    
 #sfx {  
-    background-image: url(Images/soundON.png);
+    background-image: url(./Images/soundON.png);
     right: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ body {
 }
 
 #fs {
-  background-image: url(Images/fullScreen.png);
+  background-image: url(./Images/fullScreen.png);
   left: 10px;
   background-position: left;
   background-repeat: no-repeat;

@@ -54,16 +54,16 @@ class Game {
             let obstacleType
              switch(true){                                                 //NEW
                 case this.score < 1100:   //100
-                obstacleType = 'images/shark.png'
+                obstacleType = './images/shark.png'
                 break
                 case this.score > 1100 && this.score <= 2500:   //100 y 1000
-                obstacleType = "images/25-1.png" 
+                obstacleType = "./images/25-1.png" 
                 break
                 case this.score > 2500:  //1000
-                obstacleType = "images/killerWhale-1.png"
+                obstacleType = "./images/killerWhale-1.png"
                 break
                 default:
-                obstacleType = 'images/shark.png'
+                obstacleType = './images/shark.png'
             }
             console.log("Obstacle", obstacleType)
             this.obstacles.push(new Obstacle(this.gameScreen, obstacleType))

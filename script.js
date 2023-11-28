@@ -56,11 +56,11 @@ window.onload = function () {
       audioElement.time = 0
       audioElement.volume = 0
       // change item
-      musicBtn.style.backgroundImage = 'url(Images/soundOFF.png)';
+      musicBtn.style.backgroundImage = 'url(./Images/soundOFF.png)';
       play = false
     } else {
       audioElement.volume = 0.1
-      musicBtn.style.backgroundImage = 'url(Images/soundON.png)';
+      musicBtn.style.backgroundImage = 'url(./Images/soundON.png)';
       audioElement.play()
       play = true
     }
