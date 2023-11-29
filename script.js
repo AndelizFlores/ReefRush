@@ -42,8 +42,8 @@ window.onload = function () {
     // audio.play()
 
     let audioElement = document.getElementById("audio")
-    audioElement.volume = 0.1
-    audioElement.play()
+    // audioElement.volume = 0.1
+    // audioElement.play()
 
     let play = true
    
@@ -78,6 +78,8 @@ window.onload = function () {
     startButton.addEventListener("click", function () {
       game = new Game()
       startGame();
+      audioElement.volume = 0.1
+      audioElement.play()
       // bubbles.volume = 0.3
       // bubbles.play()
       // bubbles.loop = true
