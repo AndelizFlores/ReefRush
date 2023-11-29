@@ -80,6 +80,7 @@ window.onload = function () {
       startGame();
       audioElement.volume = 0.1
       audioElement.play()
+      audioElement.loop = true
       // bubbles.volume = 0.3
       // bubbles.play()
       // bubbles.loop = true

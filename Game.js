@@ -53,13 +53,13 @@ class Game {
         if (this.frames % 120 === 0) {
             let obstacleType
              switch(true){                                                 //NEW
-                case this.score < 1700:   //100
+                case this.score < 3000:   //100
                 obstacleType = './Images/shark.png'
                 break
-                case this.score > 1700 && this.score <= 3000:   //100 y 1000
+                case this.score > 3000 && this.score <= 7000:   //100 y 1000
                 obstacleType = "./Images/25-1.png" 
                 break
-                case this.score > 3000:  //1000
+                case this.score > 7000:  //1000
                 obstacleType = "./Images/killerWhale-1.png"
                 break
                 default:
@@ -127,7 +127,7 @@ class Game {
     // displayStatusText(ctx)
 
     showGrade(score) {
-        if(score > 10000) return "Chuck Norris?";
+        if(score > 10000) return "Are you real?";
         else if(score > 7500) return "You're crazy";
         else if(score > 6000) return "Awesome";
         else if(score > 5000) return "Great!";
