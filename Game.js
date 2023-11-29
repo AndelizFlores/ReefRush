@@ -128,11 +128,11 @@ class Game {
 
     showGrade(score) {
         if(score > 10000) return "Are you real?";
-        else if(score > 7500) return "You're crazy";
-        else if(score > 6000) return "Awesome";
-        else if(score > 5000) return "Great!";
-        else if(score > 3000) return "Nice!";
-        else if(score > 2700) return "Good Job!";
+        else if(score > 7500) return "So close...";
+        else if(score > 6000) return "Awesome but...";
+        else if(score > 5000) return "Nice but...";
+        else if(score > 3000) return "Could be better...";
+        else if(score > 2700) return "Well...";
         else if(score > 2600) return "Really?";
         else return "Poor...";
     }
@@ -145,7 +145,7 @@ class Game {
         this.gameScreen.style.width = `${0}px`
         this.gameScreen.style.display = 'none'
         this.gameEndScreen.style.display = 'inherit'
-        if (this.score > 3000) {
+        if (this.score > 10000) {
             this.resultElement.innerHTML = `${this.showGrade(this.score)} You won!`
         } else {
             this.resultElement.innerHTML = `${this.showGrade(this.score)} You lose!`
